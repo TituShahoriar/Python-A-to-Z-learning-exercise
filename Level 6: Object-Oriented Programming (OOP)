@@ -1,1 +1,56 @@
 
+Level 6: Object-Oriented Programming (OOP)
+
+26. Create a class representing a student with name and roll number:
+```python
+class Student:
+    def __init__(self, name, roll_number):
+        self.name = name
+        self.roll_number = roll_number
+
+student = Student("John Doe", 12345)
+print("Student Name:", student.name)
+print("Roll Number:", student.roll_number)
+```
+
+27. Create a class representing a circle with radius and area:
+```python
+import math
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        return math.pi * self.radius**2
+
+circle = Circle(5)
+area = circle.calculate_area()
+print("Radius:", circle.radius)
+print("Area:", area)
+```
+
+28. Create a class representing a bank account with deposit and withdrawal methods:
+```python
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient balance.")
+
+account = BankAccount("123456789", 1000)
+print("Account Number:", account.account_number)
+print("Balance:", account.balance)
+account.deposit(500)
+print("Balance after deposit:", account.balance)
+account.withdraw(200)
+print("Balance after withdrawal:", account.balance)
+```
