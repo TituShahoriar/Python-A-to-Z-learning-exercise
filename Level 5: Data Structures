@@ -1,1 +1,79 @@
 
+Level 5: Data Structures
+
+22. Implement a stack using a list:
+```python
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        if not self.is_empty
+
+():
+            return self.items.pop()
+        else:
+            raise IndexError("Stack is empty.")
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def size(self):
+        return len(self.items)
+
+stack = Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+print("Stack size:", stack.size())
+print("Popped item:", stack.pop())
+print("Stack is empty?", stack.is_empty())
+```
+
+23. Implement a queue using a list:
+```python
+class Queue:
+    def __init__(self):
+        self.items = []
+
+    def enqueue(self, item):
+        self.items.append(item)
+
+    def dequeue(self):
+        if not self.is_empty():
+            return self.items.pop(0)
+        else:
+            raise IndexError("Queue is empty.")
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def size(self):
+        return len(self.items)
+
+queue = Queue()
+queue.enqueue(1)
+queue.enqueue(2)
+queue.enqueue(3)
+print("Queue size:", queue.size())
+print("Dequeued item:", queue.dequeue())
+print("Queue is empty?", queue.is_empty())
+```
+
+24. Sort a list of numbers in ascending order:
+```python
+numbers = [5, 2, 9, 10, 1]
+numbers.sort()
+print("Sorted list:", numbers)
+```
+
+25. Reverse a string:
+```python
+string = input("Enter a string: ")
+reversed_string = string[::-1]
+print("Reversed string:", reversed_string)
+```
+
