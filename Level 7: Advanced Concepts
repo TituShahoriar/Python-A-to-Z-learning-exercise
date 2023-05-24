@@ -1,1 +1,63 @@
 
+Level 7: Advanced Concepts
+
+29. Handle exceptions using try-except blocks:
+```python
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+    print("Result:", result)
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+```
+
+30. Generate a random number between a given range:
+```python
+import random
+
+lower = int(input("Enter the lower bound: "))
+upper = int(input("Enter the upper bound: "))
+random_number = random.randint(lower, upper)
+print("
+
+Random number:", random_number)
+```
+
+31. Perform matrix multiplication:
+```python
+import numpy as np
+
+matrix1 = np.array([[1, 2], [3, 4]])
+matrix2 = np.array([[5, 6], [7, 8]])
+result = np.dot(matrix1, matrix2)
+print("Matrix multiplication result:")
+print(result)
+```
+
+32. Implement binary search in a sorted list:
+```python
+def binary_search(lst, target):
+    low = 0
+    high = len(lst) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        if lst[mid] == target:
+            return mid
+        elif lst[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return -1
+
+numbers = [1, 2, 3, 4, 5]
+target = 3
+index = binary_search(numbers, target)
+if index != -1:
+    print("Element", target, "found at index", index)
+else:
+    print("Element", target, "not found.")
+```
