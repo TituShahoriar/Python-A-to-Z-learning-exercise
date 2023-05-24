@@ -1,1 +1,49 @@
 
+Level 8: Additional Topics
+
+33. Make HTTP requests using the requests library:
+```python
+import requests
+
+url = "https://api.example.com/data"
+response = requests.get(url)
+data = response.json()
+print("Response:", data)
+```
+
+34. Scrape data from a website using the BeautifulSoup library:
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+title = soup.title.string
+print("Title:", title)
+```
+
+35. Interact with a database using the SQLite library:
+```python
+import sqlite3
+
+# Connect to the database
+conn = sqlite3.connect("example.db")
+
+# Create a cursor
+cursor = conn.cursor()
+
+# Execute SQL queries
+cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, email TEXT)")
+cursor.execute("INSERT INTO users (name, email) VALUES (?, ?)", ("John Doe", "john@example.com"))
+conn.commit()
+
+# Retrieve data
+cursor.execute("SELECT * FROM users")
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
+
+# Close the connection
+conn.close()
+```
