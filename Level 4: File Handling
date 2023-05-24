@@ -1,1 +1,30 @@
 
+Level 4: File Handling
+
+19. Read a file and count the number of lines in it:
+```python
+filename = input("Enter the filename: ")
+with open(filename, 'r') as file:
+    lines = file.readlines()
+    line_count = len(lines)
+print("Number of lines in the file:", line_count)
+```
+
+20. Read a file and find the longest word in it:
+```python
+filename = input("Enter the filename: ")
+with open(filename, 'r') as file:
+    words = file.read().split()
+    longest_word = max(words, key=len)
+print("The longest word in the file is:", longest_word)
+```
+
+21. Write a list of numbers to a file:
+```python
+numbers = [1, 2, 3, 4, 5]
+filename = input("Enter the filename: ")
+with open(filename, 'w') as file:
+    for num in numbers:
+        file.write(str(num) + '\n')
+print("Numbers have been written to the file.")
+```
