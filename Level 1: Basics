@@ -41,7 +41,7 @@ print("The factorial of", num, "is:", factorial)
 
 
 6. Check if a string is a palindrome:
-```python
+
 string = input("Enter a string: ")
 if string == string[::-1]:
     print("The string is a palindrome.")
