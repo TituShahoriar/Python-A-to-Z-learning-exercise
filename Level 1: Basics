@@ -1,7 +1,7 @@
 Level 1: Basics
 
 1. Print "Hello, World!":
-```python
+
 print("Hello, World!")
 ``
 
