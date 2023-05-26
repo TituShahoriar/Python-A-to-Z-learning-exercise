@@ -47,7 +47,7 @@ if string == string[::-1]:
     print("The string is a palindrome.")
 else:
     print("The string is not a palindrome.")
-```
+
 
 7. Generate Fibonacci series up to a given number:
 ```python
