@@ -50,7 +50,7 @@ else:
 
 
 7. Generate Fibonacci series up to a given number:
-```python
+
 num = int(input("Enter the number of terms: "))
 fibonacci = [0, 1]
 while len(fibonacci) < num:
