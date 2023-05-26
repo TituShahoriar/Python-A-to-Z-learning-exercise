@@ -3,7 +3,7 @@ Level 1: Basics
 1. Print "Hello, World!":
 ```python
 print("Hello, World!")
-```
+``
 
 2. Add two numbers entered by the user:
 ```python
